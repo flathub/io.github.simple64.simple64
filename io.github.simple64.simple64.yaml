@@ -42,12 +42,12 @@ modules:
       ldflags-override: true
     build-commands:
       - ./build.sh nozip
-      - mv mupen64plus /app
+      - mv simple64 /app
     sources:
       - type: git
         url: https://github.com/simple64/simple64.git
-        tag: v2022.08.9
-        commit: fbf2c912a7f2f8bdfd26a686bd679418a0ed3270
+        tag: v2022.09.1
+        commit: 0b83c2bc3209873e0386acf6e4d785f25598134f
         x-checker-data:
           is-main-source: true
           type: git
