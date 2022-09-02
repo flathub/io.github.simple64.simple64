@@ -62,7 +62,7 @@ modules:
       - install -D gui-wrapper.sh -t /app/bin
     sources:
       - type: file
-        url: https://raw.githubusercontent.com/simple64/simple64-gui/ae1b6e8b01ea811f117db30b252d73d7534098c9/simple64.svg
+        url: https://raw.githubusercontent.com/simple64/simple64-gui/1ed404dfc06d324d5d02a31a9b350df71954a6fc/icons/simple64.svg
         sha256: 5d487f2589914a8b14af9e219e26e72b68de579a5af1ea7c369ebd2b83c5e7bc
       - type: file
         path: io.github.simple64.simple64.desktop
