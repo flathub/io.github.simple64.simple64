@@ -22,8 +22,8 @@ modules:
       - ln -s /app/bin/7zz /app/bin/7za
     sources:
       - type: archive
-        url: https://www.7-zip.org/a/7z2107-linux-x64.tar.xz
-        sha256: 4e2499064413ea66c6b83beb994f0ea4ee87b1ec80188188db62a6ec7e74d300
+        url: https://www.7-zip.org/a/7z2201-linux-x64.tar.xz
+        sha256: 2c266f6794adec310c4631232c1d039f46988d51082fe5e80349c52ee7ed60bb
         strip-components: 0
 
   - name: hidapi
