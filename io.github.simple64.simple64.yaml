@@ -28,7 +28,6 @@ modules:
 
   - name: hidapi
     buildsystem: cmake-ninja
-    subdir: linux
     sources:
       - type: git
         url: https://github.com/libusb/hidapi.git
