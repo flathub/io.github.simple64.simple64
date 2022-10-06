@@ -28,11 +28,11 @@ modules:
 
   - name: hidapi
     buildsystem: cmake-ninja
+    subdir: linux
     sources:
       - type: git
         url: https://github.com/libusb/hidapi.git
         tag: hidapi-0.12.0
-        path: linux
 
   - name: simple64
     buildsystem: simple
