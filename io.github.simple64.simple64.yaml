@@ -1,6 +1,6 @@
 app-id: io.github.simple64.simple64
 runtime: org.kde.Platform
-runtime-version: '6.3'
+runtime-version: "6.4"
 sdk: org.kde.Sdk
 command: gui-wrapper.sh
 rename-icon: simple64
@@ -28,10 +28,23 @@ modules:
 
   - name: hidapi
     buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - "-DCMAKE_BUILD_TYPE=Release"
     sources:
       - type: git
         url: https://github.com/libusb/hidapi.git
         tag: hidapi-0.12.0
+
+  - name: SDL2_net
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - "-DCMAKE_BUILD_TYPE=Release"
+    sources:
+      - type: git
+        url: https://github.com/libsdl-org/SDL_net.git
+        tag: release-2.2.0
 
   - name: simple64
     buildsystem: simple
