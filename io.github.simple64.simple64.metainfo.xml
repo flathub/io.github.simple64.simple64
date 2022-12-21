@@ -18,6 +18,7 @@
       <screenshot type="default">https://raw.githubusercontent.com/flathub/io.github.simple64.simple64/master/simple64.png</screenshot>
   </screenshots>
   <releases>
+    <release version="v2022.12.4" date="2022-12-21"/>
     <release version="v2022.12.3" date="2022-12-11"/>
     <release version="v2022.12.2" date="2022-12-06"/>
     <release version="v2022.12.1" date="2022-12-05"/>
