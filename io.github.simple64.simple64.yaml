@@ -1,6 +1,6 @@
 app-id: io.github.simple64.simple64
 runtime: org.kde.Platform
-runtime-version: '6.4'
+runtime-version: "6.4"
 sdk: org.kde.Sdk
 command: gui-wrapper.sh
 rename-icon: simple64
@@ -17,13 +17,15 @@ modules:
 
   - name: 7zip
     buildsystem: simple
+    subdir: CPP/7zip/Bundles/Alone2
     build-commands:
-      - install -D 7zz -t /app/bin
+      - make -j -f makefile.gcc
+      - install -D ./_o/7zz -t /app/bin
       - ln -s /app/bin/7zz /app/bin/7za
     sources:
       - type: archive
-        url: https://www.7-zip.org/a/7z2201-linux-x64.tar.xz
-        sha256: 2c266f6794adec310c4631232c1d039f46988d51082fe5e80349c52ee7ed60bb
+        url: https://www.7-zip.org/a/7z2201-src.tar.xz
+        sha256: 393098730c70042392af808917e765945dc2437dee7aae3cfcc4966eb920fbc5
         strip-components: 0
 
   - name: hidapi
