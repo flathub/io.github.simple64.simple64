@@ -1,6 +1,6 @@
 app-id: io.github.simple64.simple64
 runtime: org.kde.Platform
-runtime-version: "6.4"
+runtime-version: '6.4'
 sdk: org.kde.Sdk
 command: gui-wrapper.sh
 rename-icon: simple64
@@ -61,8 +61,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/simple64/simple64.git
-        tag: v2022.12.5
-        commit: a39553361ba71f36a1af859e37839007da4447de
+        tag: v2022.12.6
+        commit: 9aad29ffaffa053bd010a6effa011dcd6a569091
         x-checker-data:
           is-main-source: true
           type: git
