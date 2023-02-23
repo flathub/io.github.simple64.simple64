@@ -13,6 +13,7 @@ finish-args:
   - --device=all
   - --talk-name=org.freedesktop.ScreenSaver
   - --env=QT_VULKAN_LIB=libvulkan.so.1
+  - --filesystem=xdg-run/app/com.discordapp.Discord:create
 modules:
   - shared-modules/libusb/libusb.json
 
