@@ -2,7 +2,7 @@ app-id: io.github.simple64.simple64
 runtime: org.kde.Platform
 runtime-version: '6.4'
 sdk: org.kde.Sdk
-command: simple64-gui
+command: gui-wrapper.sh
 rename-icon: simple64
 finish-args:
   - --socket=wayland
@@ -77,6 +77,7 @@ modules:
       - install -D simple64.svg -t /app/share/icons/hicolor/scalable/apps
       - install -D io.github.simple64.simple64.desktop -t /app/share/applications
       - install -D io.github.simple64.simple64.metainfo.xml -t /app/share/metainfo
+      - install -D gui-wrapper.sh -t /app/bin
     sources:
       - type: file
         url: https://raw.githubusercontent.com/simple64/simple64-gui/88fc6e90d7808de45cd538540b524a49e2388e4e/icons/simple64.svg
@@ -85,3 +86,5 @@ modules:
         path: io.github.simple64.simple64.desktop
       - type: file
         path: io.github.simple64.simple64.metainfo.xml
+      - type: file
+        path: gui-wrapper.sh
