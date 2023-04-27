@@ -67,6 +67,7 @@ modules:
       cppflags-override: true
       cxxflags-override: true
       ldflags-override: true
+      ldflags: -L/app/lib
     build-commands:
       - ./build.sh nozip
       - mv simple64 /app
