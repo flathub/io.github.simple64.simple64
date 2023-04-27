@@ -50,6 +50,14 @@ modules:
         url: https://github.com/libsdl-org/SDL_net.git
         tag: release-2.2.0
 
+  - name: lightning
+    buildsystem: autotools
+    builddir: true
+    sources:
+      - type: archive
+        url: https://ftp.gnu.org/gnu/lightning/lightning-2.2.1.tar.gz
+        sha256: 98671681d5684770ccb06a07fa3b8f032a454bdb56eafc18e6fab04459ea3caa
+
   - name: simple64
     buildsystem: simple
     build-options:
