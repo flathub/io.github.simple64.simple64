@@ -50,16 +50,6 @@ modules:
         url: https://github.com/libsdl-org/SDL_net.git
         tag: release-2.2.0
 
-  - name: lightning
-    buildsystem: autotools
-    builddir: true
-    post-install:
-      - mv /app/include/lightning.h /app/include/lightning
-    sources:
-      - type: archive
-        url: https://ftp.gnu.org/gnu/lightning/lightning-2.2.2.tar.gz
-        sha256: 0aca8242dead17d62117bcfcb078e6a9ea856cc81742813c9e8394bcce73b3e2
-
   - name: simple64
     buildsystem: simple
     build-options:
@@ -67,7 +57,6 @@ modules:
       cppflags-override: true
       cxxflags-override: true
       ldflags-override: true
-      ldflags: -L/app/lib
     build-commands:
       - ./build.sh nozip
       - mv simple64 /app
