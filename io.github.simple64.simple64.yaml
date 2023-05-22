@@ -38,7 +38,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libusb/hidapi.git
-        tag: hidapi-0.13.1
+        tag: hidapi-0.14.0
 
   - name: SDL2_net
     buildsystem: cmake-ninja
