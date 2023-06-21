@@ -64,8 +64,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/simple64/simple64.git
-        tag: v2023.06.1
-        commit: efbb4e0f02a26ef266681b7c97b62d137b17d5b1
+        tag: v2023.06.2
+        commit: a160897d74621250b97d7b70c7f155f7a9a82de9
         x-checker-data:
           is-main-source: true
           type: git
