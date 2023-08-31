@@ -71,7 +71,7 @@ modules:
         sha256: 426eb5fa70647d884f461c63825b63668349efb4bc68a16e70bc4a24e119b92e
         strip-components: 0
 
-  - name: vosk x86_64
+  - name: vosk-x86_64
     only-arches: ["x86_64"]
     buildsystem: simple
     build-commands:
@@ -82,7 +82,7 @@ modules:
         sha256: bbdc8ed85c43979f6443142889770ea95cbfbc56cffb5c5dcd73afa875c5fbb2
         strip-components: 0
 
-  - name: vosk aarch64
+  - name: vosk-aarch64
     only-arches: ["aarch64"]
     buildsystem: simple
     build-commands:
