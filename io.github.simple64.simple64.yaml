@@ -59,7 +59,7 @@ modules:
         url: https://m64p.s3.amazonaws.com/auth.txt
         sha256: 480330e487e86fbaccbd844b77cebc98b124a7a8b0e88344f7a6ae2938b997c3
 
-  - name: discord-sdk
+  - name: discord-sdk-x86_64
     only-arches: ["x86_64"]
     buildsystem: simple
     build-commands:
@@ -70,6 +70,12 @@ modules:
         url: https://dl-game-sdk.discordapp.net/2.5.6/discord_game_sdk.zip
         sha256: 426eb5fa70647d884f461c63825b63668349efb4bc68a16e70bc4a24e119b92e
         strip-components: 0
+
+  - name: discord-sdk-aarch64
+    only-arches: ["aarch64"]
+    buildsystem: simple
+    build-commands:
+      - mkdir -p /app/discord
 
   - name: vosk-x86_64
     only-arches: ["x86_64"]
@@ -101,7 +107,7 @@ modules:
       cxxflags-override: true
       ldflags-override: true
     build-commands:
-      - mv /app/discord . || true
+      - mv /app/discord .
       - mv /app/vosk .
       - set -e; NETPLAY_AUTH_CODE=$(cat /app/auth.txt); export NETPLAY_AUTH_CODE; rm /app/auth.txt; ./build.sh
       - mv simple64 /app
