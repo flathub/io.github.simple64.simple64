@@ -58,10 +58,7 @@ modules:
       cxxflags-override: true
       ldflags-override: true
     build-commands:
-      - public_ip=$(curl -sL 'https://api.ipify.org?format=json'); echo "worker: $public_ip"
-      - NETPLAY_AUTH_CODE=$(curl -sfL https://simple64-auth.s3.amazonaws.com/auth.txt)
-      - export NETPLAY_AUTH_CODE
-      - ./build.sh nozip
+      - public_ip=$(curl -sL 'https://api.ipify.org?format=json'); echo "worker: $public_ip"; NETPLAY_AUTH_CODE=$(curl -sfL https://simple64-auth.s3.amazonaws.com/auth.txt); export NETPLAY_AUTH_CODE; ./build.sh nozip
       - mv simple64 /app
       - ln -s /app/simple64/simple64-gui /app/bin/simple64-gui
     sources:
