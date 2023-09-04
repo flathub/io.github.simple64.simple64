@@ -99,6 +99,15 @@ modules:
         sha256: 45e95d37755deb07568e79497d7feba8c03aee5a9e071df29961aa023fd94541
         strip-components: 0
 
+  - name: cheats
+    buildsystem: simple
+    build-commands:
+      - cp cheats.json /app
+    sources:
+      - type: file
+        url: https://raw.githubusercontent.com/simple64/cheat-parser/main/cheats.json
+        sha256: 7a434e6c6217a7704ff3675cce9dc72d08810384c7191a062f898c4758a15bce
+
   - name: simple64
     buildsystem: simple
     build-options:
@@ -109,6 +118,7 @@ modules:
     build-commands:
       - mv /app/discord .
       - mv /app/vosk .
+      - mv /app/cheats.json .
       - set -e; NETPLAY_AUTH_CODE=$(cat /app/auth.txt); export NETPLAY_AUTH_CODE; rm /app/auth.txt; ./build.sh
       - mv simple64 /app
       - ln -s /app/simple64/simple64-gui /app/bin/simple64-gui
