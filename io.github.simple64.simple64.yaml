@@ -1,6 +1,6 @@
 app-id: io.github.simple64.simple64
 runtime: org.kde.Platform
-runtime-version: "6.5"
+runtime-version: '6.5'
 sdk: org.kde.Sdk
 command: gui-wrapper.sh
 rename-icon: simple64
@@ -60,7 +60,7 @@ modules:
         sha256: 480330e487e86fbaccbd844b77cebc98b124a7a8b0e88344f7a6ae2938b997c3
 
   - name: discord-sdk-x86_64
-    only-arches: ["x86_64"]
+    only-arches: [x86_64]
     buildsystem: simple
     build-commands:
       - mkdir -p /app/discord
@@ -72,13 +72,13 @@ modules:
         strip-components: 0
 
   - name: discord-sdk-aarch64
-    only-arches: ["aarch64"]
+    only-arches: [aarch64]
     buildsystem: simple
     build-commands:
       - mkdir -p /app/discord
 
   - name: vosk-x86_64
-    only-arches: ["x86_64"]
+    only-arches: [x86_64]
     buildsystem: simple
     build-commands:
       - mv vosk-linux-x86_64-0.3.45 /app/vosk
@@ -89,7 +89,7 @@ modules:
         strip-components: 0
 
   - name: vosk-aarch64
-    only-arches: ["aarch64"]
+    only-arches: [aarch64]
     buildsystem: simple
     build-commands:
       - mv vosk-linux-aarch64-0.3.45 /app/vosk
@@ -119,14 +119,15 @@ modules:
       - mv /app/discord .
       - mv /app/vosk .
       - mv /app/cheats.json .
-      - set -e; NETPLAY_AUTH_CODE=$(cat /app/auth.txt); export NETPLAY_AUTH_CODE; rm /app/auth.txt; ./build.sh
+      - set -e; NETPLAY_AUTH_CODE=$(cat /app/auth.txt); export NETPLAY_AUTH_CODE;
+        rm /app/auth.txt; ./build.sh
       - mv simple64 /app
       - ln -s /app/simple64/simple64-gui /app/bin/simple64-gui
     sources:
       - type: git
         url: https://github.com/simple64/simple64.git
-        tag: v2023.08.6
-        commit: 38d98f191424a9977475e6119d8ba90ba186025c
+        tag: v2023.09.1
+        commit: 9a9ca962889dea61deafb10963edb3d620948bab
         x-checker-data:
           is-main-source: true
           type: git
