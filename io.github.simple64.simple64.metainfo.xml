@@ -15,7 +15,10 @@
       <p>It should give you the best out-of-the-box experience available for N64 gaming. There are no plugins to download.</p>
   </description>
   <screenshots>
-      <screenshot type="default">https://raw.githubusercontent.com/flathub/io.github.simple64.simple64/master/simple64.png</screenshot>
+      <screenshot type="default">
+        <image>https://raw.githubusercontent.com/flathub/io.github.simple64.simple64/master/simple64.png</image>
+        <caption>Gameplay</caption>
+      </screenshot>
   </screenshots>
   <releases>
     <release version="v2024.01.1" date="2024-01-14"/>
