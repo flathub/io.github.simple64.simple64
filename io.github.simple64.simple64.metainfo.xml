@@ -6,6 +6,9 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
   <content_rating type="oars-1.0"/>
+  <developer id="io.github.simple64">
+    <name>simple64</name>
+  </developer>
   <launchable type="desktop-id">io.github.simple64.simple64.desktop</launchable>
   <url type="homepage">https://simple64.github.io</url>
   <url type="bugtracker">https://github.com/simple64/simple64/issues</url>
@@ -15,7 +18,10 @@
       <p>It should give you the best out-of-the-box experience available for N64 gaming. There are no plugins to download.</p>
   </description>
   <screenshots>
-      <screenshot type="default">https://raw.githubusercontent.com/flathub/io.github.simple64.simple64/master/simple64.png</screenshot>
+      <screenshot type="default">
+        <image>https://raw.githubusercontent.com/flathub/io.github.simple64.simple64/master/simple64.png</image>
+        <caption>Gameplay</caption>
+      </screenshot>
   </screenshots>
   <releases>
     <release version="v2024.01.1" date="2024-01-14"/>
