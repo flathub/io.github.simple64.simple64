@@ -106,7 +106,7 @@ modules:
     sources:
       - type: file
         url: https://raw.githubusercontent.com/simple64/cheat-parser/main/cheats.json
-        sha256: 7a434e6c6217a7704ff3675cce9dc72d08810384c7191a062f898c4758a15bce
+        sha256: ad2ff831d8bed7c0b6cb0b4ce675b65da2640b56272993dce18750de609f1125
 
   - name: simple64
     buildsystem: simple
