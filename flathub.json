@@ -1,4 +1,6 @@
 {
   "only-arches": ["x86_64", "aarch64"],
+  "end-of-life": "The application has been renamed to io.github.gopher64.gopher64.",
+  "end-of-life-rebase": "io.github.gopher64.gopher64"
   "automerge-flathubbot-prs": true
 }
